@@ -1,0 +1,59 @@
+*{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+}
+html,body{
+        height: 100%;
+        width: 100%;
+}
+body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color:rgb(6, 169, 224);
+}
+.container{
+        height: 420px;
+        width: 350px;
+        background-color: rgb(255, 251, 251);
+       border-top-left-radius: 10px;
+       border-top-right-radius: 10px;
+        position: relative;
+        overflow: hidden;
+}
+.container img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+}
+.container i{
+        color: #fff;
+        font-size: 75px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% ,-50%) scale(0);
+        opacity: 0;
+        transition: transform ease 0.5s;
+
+}
+.like{
+        width: 352px;
+        height: 50px;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        align-items: center;
+}
+.like i{
+        color: rgb(255, 246, 246);
+        font-size: 30px;
+        margin: 8px;
+        
+        
+}
+.love{
+        transition: transform ease 0.5s;
+}
